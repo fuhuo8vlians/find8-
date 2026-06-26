@@ -1,0 +1,2 @@
+console.rmt.sbtjt.com
+gpm-uat.sbtjt.com

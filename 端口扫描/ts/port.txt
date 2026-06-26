@@ -1,0 +1,4 @@
+127.0.0.1:445 open
+127.0.0.1:5357 open
+127.0.0.1:135 open
+TCP/RPC, , [Microsoft Windows RPC], 127.0.0.1:135, [.@],

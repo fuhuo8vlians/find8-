@@ -1,0 +1,2 @@
+{"name":"www.zjznb.com.","type":"A","class":"IN","status":"NOERROR","data":{"answers":[{"ttl":300,"type":"A","class":"IN","name":"www.zjznb.com.","data":"172.67.210.132"},{"ttl":300,"type":"A","class":"IN","name":"www.zjznb.com.","data":"104.21.61.126"}]},"resolver":"1.0.0.19:53"}
+{"name":"zjznb.com.","type":"A","class":"IN","status":"NOERROR","data":{"answers":[{"ttl":300,"type":"A","class":"IN","name":"zjznb.com.","data":"172.67.210.132"},{"ttl":300,"type":"A","class":"IN","name":"zjznb.com.","data":"104.21.61.126"}]},"resolver":"4.2.2.2:53"}

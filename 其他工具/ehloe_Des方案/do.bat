@@ -1,0 +1,1 @@
+ehole finger -l url.txt -o res.xlsx

@@ -1,0 +1,4 @@
+{"name":"www.zjznb.cn.","type":"A","class":"IN","status":"NOERROR","data":{"answers":[{"ttl":600,"type":"A","class":"IN","name":"www.zjznb.cn.","data":"119.91.119.98"}]},"resolver":"64.6.65.6:53"}
+{"name":"cat.zjznb.cn.","type":"A","class":"IN","status":"NOERROR","data":{"answers":[{"ttl":600,"type":"A","class":"IN","name":"cat.zjznb.cn.","data":"119.91.119.98"}]},"resolver":"9.9.9.10:53"}
+{"name":"cmd.zjznb.cn.","type":"A","class":"IN","status":"NOERROR","data":{"answers":[{"ttl":600,"type":"A","class":"IN","name":"cmd.zjznb.cn.","data":"8.155.35.122"}]},"resolver":"9.9.9.10:53"}
+{"name":"zjznb.cn.","type":"A","class":"IN","status":"NOERROR","data":{"authorities":[{"ttl":600,"type":"SOA","class":"IN","name":"zjznb.cn.","data":"dns21.hichina.com. hostmaster.hichina.com. 2026011209 3600 1200 86400 600"}]},"resolver":"4.2.2.5:53"}

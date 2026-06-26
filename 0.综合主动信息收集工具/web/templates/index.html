@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>find8威廉斯 v1.0</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div id="app">
+  <header class="header">
+    <div class="header-left">
+      <h1 class="logo">find8威廉斯</h1>
+      <span class="version">v1.0</span>
+    </div>
+    <div class="header-right">
+      <span class="proxy-indicator" id="proxyIndicator" onclick="toggleProxy()">
+        <span class="dot offline" id="proxyDot"></span>
+        <span id="proxyLabel">代理关闭</span>
+      </span>
+      <button class="btn btn-sm btn-outline" id="btnProxyToggle" onclick="toggleProxy()">切换代理</button>
+      <button class="btn btn-sm btn-icon" onclick="openSettings()">&#9881;</button>
+    </div>
+  </header>
+
+  <div class="main-layout">
+    <nav class="sidebar">
+      <ul class="nav-list">
+        <li class="nav-item active" data-tab="dashboard" onclick="switchTab('dashboard')">
+          <span class="nav-icon">&#9638;</span> 仪表盘
+        </li>
+        <li class="nav-item nav-divider"></li>
+        <li class="nav-item" data-tab="projects" onclick="switchTab('projects')">
+          <span class="nav-icon">&#128193;</span> 项目管理
+        </li>
+        <li class="nav-item" data-tab="asset-list" onclick="switchTab('asset-list')">
+          <span class="nav-icon">&#128196;</span> 资产列表
+        </li>
+        <li class="nav-item" data-tab="asset-single" onclick="switchTab('asset-single')">
+          <span class="nav-icon">&#10133;</span> 单个录入
+        </li>
+        <li class="nav-item" data-tab="asset-batch" onclick="switchTab('asset-batch')">
+          <span class="nav-icon">&#128640;</span> 批量录入
+        </li>
+        <li class="nav-item" data-tab="asset-excel" onclick="switchTab('asset-excel')">
+          <span class="nav-icon">&#128203;</span> Excel导入
+        </li>
+        <li class="nav-item nav-divider"></li>
+        <li class="nav-item" data-tab="subdomain" onclick="switchTab('subdomain')">
+          <span class="nav-icon">&#127758;</span> 子域名收集
+        </li>
+        <li class="nav-item" data-tab="portscan" onclick="switchTab('portscan')">
+          <span class="nav-icon">&#128268;</span> 端口扫描
+        </li>
+        <li class="nav-item" data-tab="dirbrute" onclick="switchTab('dirbrute')">
+          <span class="nav-icon">&#128193;</span> 目录爆破
+        </li>
+        <li class="nav-item" data-tab="jsanalysis" onclick="switchTab('jsanalysis')">
+          <span class="nav-icon">&#128220;</span> JS分析
+        </li>
+      </ul>
+      <div class="sidebar-footer">
+        <div class="history-section">
+          <h3>扫描历史</h3>
+          <ul id="historyList"><li class="empty">暂无记录</li></ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="content">
+
+      <!-- Dashboard -->
+      <div class="tab-panel active" id="tab-dashboard">
+        <h2>仪表盘</h2>
+        <div class="dashboard-grid">
+          <div class="stat-card" onclick="switchTab('asset-list')">
+            <div class="stat-icon">&#128196;</div><div class="stat-value" id="statAssets">--</div><div class="stat-label">资产总数</div>
+          </div>
+          <div class="stat-card" onclick="switchTab('projects')">
+            <div class="stat-icon">&#128193;</div><div class="stat-value" id="statProjects">--</div><div class="stat-label">项目数</div>
+          </div>
+          <div class="stat-card" onclick="switchTab('subdomain')">
+            <div class="stat-icon">&#127758;</div><div class="stat-value" id="statSubdomain">--</div><div class="stat-label">子域名收集</div>
+          </div>
+          <div class="stat-card" onclick="switchTab('portscan')">
+            <div class="stat-icon">&#128268;</div><div class="stat-value" id="statPorts">--</div><div class="stat-label">端口扫描</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 项目管理 -->
+      <div class="tab-panel" id="tab-projects">
+        <h2>项目管理</h2>
+        <div class="card">
+          <h3>新建项目</h3>
+          <div class="input-group">
+            <input type="text" id="newProjectName" placeholder="项目名称" style="flex:1">
+            <input type="text" id="newProjectDesc" placeholder="描述（可选）" style="flex:2">
+            <button class="btn btn-primary" onclick="createProject()">+ 创建项目</button>
+          </div>
+        </div>
+        <div id="projectList"></div>
+      </div>
+
+      <!-- ==================== 资产列表（整合筛选+勾选+扫描） ==================== -->
+      <div class="tab-panel" id="tab-asset-list">
+        <h2>资产列表</h2>
+
+        <!-- 筛选条件栏 -->
+        <div class="card" style="padding:12px 18px;">
+          <div class="filter-bar">
+            <div class="filter-item">
+              <label>项目</label>
+              <select id="fProject" onchange="onProjectFilterChange()"><option value="">全部项目</option></select>
+            </div>
+            <div class="filter-item">
+              <label>公司</label>
+              <select id="companyFilter" onchange="doFilter()"><option value="">全部公司</option></select>
+            </div>
+            <div class="filter-item">
+              <label>根域名</label>
+              <input type="text" id="fRootDomain" placeholder="如 baidu.com" oninput="debounceFilter()">
+            </div>
+            <div class="filter-item">
+              <label>子域名</label>
+              <input type="text" id="fSubDomain" placeholder="*通配符" oninput="debounceFilter()">
+            </div>
+            <div class="filter-item">
+              <label>IP</label>
+              <input type="text" id="fIP" placeholder="如 119.91.*" oninput="debounceFilter()">
+            </div>
+            <div class="filter-item" style="justify-content:flex-end;">
+              <button class="btn btn-primary btn-sm" onclick="doFilter()">&#128269; 筛选</button>
+              <button class="btn btn-outline btn-sm" onclick="clearFilter()">清除</button>
+              <button class="btn btn-outline btn-sm" onclick="loadAllAssets()">&#8635; 全部</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 操作栏 -->
+        <div class="card" style="padding:10px 16px;margin-bottom:0;border-radius:var(--radius) var(--radius) 0 0;border-bottom:none;">
+          <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;">
+            <div style="display:flex;align-items:center;gap:8px;">
+              <span style="font-size:13px;color:var(--text-secondary);">已选: <b id="selectedCount" style="color:var(--accent);">0</b></span>
+              <button class="btn btn-sm" onclick="selectAllVisible()">全选</button>
+              <button class="btn btn-sm" onclick="invertSelection()">反选</button>
+              <button class="btn btn-sm" onclick="clearSelection()">清空</button>
+            </div>
+            <div style="display:flex;gap:6px;">
+              <button class="btn btn-primary btn-sm" onclick="quickScanFromList('subdomain')">&#127758; 子域名</button>
+              <button class="btn btn-sm" onclick="quickScanFromList('portscan')">&#128268; 端口</button>
+              <button class="btn btn-sm" onclick="quickScanFromList('dirbrute')">&#128193; 目录扫描</button>
+              <button class="btn btn-sm btn-success" onclick="quickScanFromList('survive')">&#128065; 存活探测</button>
+              <button class="btn btn-sm btn-danger" id="btnBatchDelete" onclick="batchDeleteAssets()" disabled>&#10005; 删除选中</button>
+              <button class="btn btn-sm btn-success" onclick="exportAssets()">&#128229; 导出Excel</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 资产表格 -->
+        <div class="table-wrap" style="border-radius:0 0 var(--radius) var(--radius);">
+          <table class="result-table" id="assetTable">
+            <thead><tr>
+              <th style="width:36px;"><input type="checkbox" id="selectAll" onchange="toggleSelectAll()"></th>
+              <th class="sortable" onclick="sortAssets('companyName')">公司 <span class="sort-arrow" id="arrow-companyName"></span></th>
+              <th class="sortable" onclick="sortAssets('rootDomain')">根域名 <span class="sort-arrow" id="arrow-rootDomain"></span></th>
+              <th class="sortable" onclick="sortAssets('subDomain')">子域名 <span class="sort-arrow" id="arrow-subDomain"></span></th>
+              <th class="sortable" onclick="sortAssets('url')">URL <span class="sort-arrow" id="arrow-url"></span></th>
+              <th class="sortable" onclick="sortAssets('ip')">IP <span class="sort-arrow" id="arrow-ip"></span></th>
+              <th style="width:55px;">状态码</th>
+              <th style="min-width:100px;">标题</th>
+              <th style="min-width:120px;">指纹/技术栈</th>
+              <th class="sortable" onclick="sortAssets('dnsStatus')">DNS <span class="sort-arrow" id="arrow-dnsStatus"></span></th>
+              <th style="width:60px;">CDN</th>
+              <th class="sortable" onclick="sortAssets('timestamp')">时间 <span class="sort-arrow" id="arrow-timestamp"></span></th>
+            </tr></thead>
+            <tbody id="assetTableBody"><tr><td colspan="12" style="padding:30px;text-align:center;color:var(--text-secondary);">加载中...</td></tr></tbody>
+          </table>
+        </div>
+
+        <!-- 扫描进度（内嵌） -->
+        <div id="inlineScanLog" style="display:none;margin-top:12px;">
+          <div class="card">
+            <h3>扫描进度 <button class="btn btn-sm btn-outline" onclick="clearInlineScan()" style="float:right">关闭</button></h3>
+            <div class="log-area" id="inlineLogArea" style="height:180px;">
+              <div class="log-entry system">等待扫描...</div>
+            </div>
+            <button class="btn btn-danger btn-sm" id="btnInlineStop" onclick="stopQuickScan()" style="display:none;margin-top:8px;">&#9632; 停止扫描</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 单个录入 -->
+      <div class="tab-panel" id="tab-asset-single">
+        <h2>单个录入资产</h2>
+        <div class="card">
+          <div class="form-group"><label>归属项目</label><select id="singleProject"><option value="">无</option></select></div>
+          <div class="form-group"><label>公司名称</label><input type="text" id="singleCompany" list="companyList"><datalist id="companyList"></datalist></div>
+          <div class="form-group"><label>根域名（一行一个）</label><textarea id="singleRootDomains" rows="4" placeholder="example.com&#10;test.cn" onpaste="handleDomainPaste(event,'singleRootDomains')"></textarea></div>
+          <div class="form-group"><label>子域名（可选）</label><input type="text" id="singleSubDomain"></div>
+          <div class="form-group"><label>URL（可选）</label><input type="text" id="singleUrl"></div>
+          <button class="btn btn-primary" onclick="submitSingleAsset()">&#10003; 提交</button>
+        </div>
+      </div>
+
+      <!-- 批量录入 -->
+      <div class="tab-panel" id="tab-asset-batch">
+        <h2>批量录入子域名</h2>
+        <div class="card">
+          <p style="font-size:12px;color:var(--text-secondary);margin-bottom:12px;">粘贴子域名列表，每行一个。系统自动匹配根域名并解析DNS。</p>
+          <textarea id="batchSubdomains" rows="12" placeholder="www.example.com&#10;api.example.com&#10;admin.test.cn"></textarea>
+          <button class="btn btn-primary" id="btnBatchSubmit" onclick="submitBatchAssets()" style="margin-top:12px;">&#128640; 批量导入并解析DNS</button>
+          <span id="batchProgress" style="margin-left:12px;font-size:12px;color:var(--text-secondary);"></span>
+        </div>
+      </div>
+
+      <!-- Excel导入 -->
+      <div class="tab-panel" id="tab-asset-excel">
+        <h2>Excel 导入</h2>
+        <div class="card">
+          <p style="font-size:12px;color:var(--text-secondary);margin-bottom:12px;">.xlsx / .xls，第一列公司名称，第二列根域名。</p>
+          <div class="file-upload-area" onclick="document.getElementById('excelFile').click()">
+            <div class="upload-icon">&#128196;</div><div class="upload-text">点击选择Excel文件</div>
+          </div>
+          <input type="file" id="excelFile" accept=".xlsx,.xls" style="display:none" onchange="previewExcel()">
+          <div id="excelPreview" style="margin-top:12px;"></div>
+        </div>
+      </div>
+
+      <!-- 子域名收集 -->
+      <div class="tab-panel" id="tab-subdomain">
+        <h2>子域名收集</h2>
+        <div class="card">
+          <h3>目标域名（每行一个）</h3>
+          <textarea id="domainInput" rows="3" placeholder="example1.com&#10;example2.com" style="width:100%;margin-bottom:8px;"></textarea>
+          <div style="display:flex;gap:8px;">
+            <button class="btn btn-primary btn-sm" onclick="addDomainsFromInput()">&#10133; 批量添加</button>
+            <button class="btn btn-outline btn-sm" onclick="clearDomainTags()">清空</button>
+          </div>
+          <div class="tag-list" id="domainTags"></div>
+        </div>
+        <div class="card">
+          <h3>工具选择</h3>
+          <label class="checkbox-label"><input type="checkbox" id="chkOneForAll" checked> OneForAll</label>
+          <label class="checkbox-label"><input type="checkbox" id="chkSubfinder" checked> Subfinder</label>
+          <label class="checkbox-label"><input type="checkbox" id="chkTscan" checked> Tscan</label>
+        </div>
+        <div class="action-bar">
+          <button class="btn btn-primary btn-lg" id="btnStartScan" onclick="startScan()">&#9654; 开始扫描</button>
+          <button class="btn btn-danger btn-lg" id="btnStopScan" onclick="stopScan()" disabled>&#9632; 停止</button>
+        </div>
+        <div class="card"><h3>实时日志 <button class="btn btn-sm btn-outline" onclick="clearLogs()" style="float:right">清空</button></h3>
+          <div class="log-area" id="logArea"><div class="log-entry system">等待开始扫描...</div></div>
+        </div>
+        <div class="card" id="resultCard" style="display:none;">
+          <h3>结果 <span id="resultCount"></span> <button class="btn btn-sm btn-outline" onclick="exportResults()" style="float:right">导出TXT</button></h3>
+          <div class="table-wrap"><table class="result-table"><thead><tr><th>#</th><th>子域名</th><th>来源</th></tr></thead><tbody id="resultBody"></tbody></table></div>
+        </div>
+      </div>
+
+      <!-- 端口扫描 -->
+      <div class="tab-panel" id="tab-portscan">
+        <h2>端口扫描</h2>
+        <div class="card">
+          <h3>目标IP（每行一个）</h3>
+          <textarea id="portTargetInput" rows="3" placeholder="192.168.1.1&#10;10.0.0.1&#10;example.com" style="width:100%;margin-bottom:8px;"></textarea>
+          <div style="display:flex;gap:8px;">
+            <button class="btn btn-primary btn-sm" onclick="addPortTargets()">&#10133; 批量添加</button>
+            <button class="btn btn-outline btn-sm" onclick="clearPortTargets()">清空</button>
+          </div>
+          <div class="tag-list" id="portTargetTags"></div>
+        </div>
+        <div class="card">
+          <h3>端口策略</h3>
+          <label class="checkbox-label"><input type="radio" name="portStrategy" value="top100" checked onchange="setPortStrategy('top100')"> Top 100</label>
+          <label class="checkbox-label"><input type="radio" name="portStrategy" value="top1000" onchange="setPortStrategy('top1000')"> Top 1000</label>
+          <label class="checkbox-label"><input type="radio" name="portStrategy" value="all" onchange="setPortStrategy('all')"> 全端口 (1-65535)</label>
+        </div>
+        <div class="card">
+          <h3>spray 字典</h3>
+          <label class="checkbox-label"><input type="radio" name="sprayDict" value="small" checked onchange="setSprayDict('small')"> 小字典 (dirv2.txt)</label>
+          <label class="checkbox-label"><input type="radio" name="sprayDict" value="large" onchange="setSprayDict('large')"> 大字典 (-D)</label>
+        </div>
+        <div class="card">
+          <h3>Tscan 高级选项</h3>
+          <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:center;">
+            <label class="checkbox-label"><input type="checkbox" id="chkNp" checked onchange="updateTscanOpts()"> 禁用存活探测 (-np)</label>
+            <label class="checkbox-label"><input type="checkbox" id="chkNosmart" onchange="updateTscanOpts()"> 禁用启发式扫描 (-nosmart)</label>
+            <label style="font-size:13px;">线程 (-t) <input type="number" id="tscanThreads" value="600" min="10" max="2000" style="width:70px;padding:2px 6px;" onchange="updateTscanOpts()"></label>
+            <label style="font-size:13px;">超时 (-time) <input type="number" id="tscanTimeout" value="3" min="1" max="30" style="width:55px;padding:2px 6px;" onchange="updateTscanOpts()"> 秒</label>
+          </div>
+        </div>
+        <div class="action-bar">
+          <button class="btn btn-primary btn-lg" id="btnPortScan" onclick="startPortScan()">&#9654; 开始扫描</button>
+          <button class="btn btn-danger btn-lg" id="btnPortStop" onclick="stopPortScan()" disabled>&#9632; 停止</button>
+        </div>
+        <div class="card"><h3>实时日志 <button class="btn btn-sm btn-outline" onclick="clearPortLogs()" style="float:right">清空</button></h3>
+          <div class="log-area" id="portLogArea"><div class="log-entry system">等待开始扫描...</div></div>
+        </div>
+        <div class="card" id="portResultCard" style="display:none;">
+          <h3>扫描结果</h3>
+          <div class="table-wrap" style="max-height:350px;">
+            <table class="result-table"><thead><tr><th>#</th><th>IP</th><th>端口</th><th>协议</th><th>状态</th><th>指纹</th></tr></thead><tbody id="portResultBody"></tbody></table>
+          </div>
+        </div>
+        <div class="card" id="portHttpCard" style="display:none;">
+          <h3>HTTP服务 (ehole指纹)</h3>
+          <div class="table-wrap" style="max-height:250px;">
+            <table class="result-table"><thead><tr><th>#</th><th>URL</th><th>状态码</th><th>标题</th><th>技术栈</th></tr></thead><tbody id="portHttpBody"></tbody></table>
+          </div>
+        </div>
+        <div class="card" id="portSprayCard" style="display:none;">
+          <h3>存活路径 (spray探测)</h3>
+          <div class="table-wrap" style="max-height:250px;">
+            <table class="result-table"><thead><tr><th>#</th><th>URL</th><th>状态码</th><th>标题</th></tr></thead><tbody id="portSprayBody"></tbody></table>
+          </div>
+        </div>
+      </div>
+      <div class="tab-panel" id="tab-dirbrute">
+        <h2>目录爆破</h2>
+        <div class="card">
+          <h3>目标URL（每行一个）</h3>
+          <textarea id="dirTargetInput" rows="3" placeholder="http://example.com&#10;https://test.cn" style="width:100%;margin-bottom:8px;"></textarea>
+          <div style="display:flex;gap:8px;">
+            <button class="btn btn-primary btn-sm" onclick="addDirTargets()">&#10133; 批量添加</button>
+            <button class="btn btn-outline btn-sm" onclick="clearDirTargets()">清空</button>
+          </div>
+          <div class="tag-list" id="dirTargetTags"></div>
+        </div>
+        <div class="card">
+          <h3>工具选择</h3>
+          <label class="checkbox-label"><input type="radio" name="dirTool" value="brute" checked onchange="onDirToolChange()"> Brute (spray多字典)</label>
+          <label class="checkbox-label"><input type="radio" name="dirTool" value="dirsearch" onchange="onDirToolChange()"> dirsearch_bypass403</label>
+        </div>
+        <div class="card" id="bruteOpts">
+          <h3>Brute 字典选择</h3>
+          <label class="checkbox-label"><input type="radio" name="bruteDict" value="small" checked> 小字典 (dirv2.txt)</label>
+          <label class="checkbox-label"><input type="radio" name="bruteDict" value="large"> 大字典 (-D)</label>
+          <label class="checkbox-label"><input type="radio" name="bruteDict" value="backup"> 备份文件 (bak.txt)</label>
+          <label class="checkbox-label"><input type="radio" name="bruteDict" value="deep"> 深度字典 (dirv3.txt)</label>
+        </div>
+        <div class="card" id="dirsearchOpts" style="display:none;">
+          <h3>dirsearch 选项</h3>
+          <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center;">
+            <label class="checkbox-label"><input type="checkbox" id="chkBypass403"> 403绕过 (-b)</label>
+            <label class="checkbox-label"><input type="checkbox" id="chkJsfind"> JS提取 (-j)</label>
+            <label class="checkbox-label"><input type="checkbox" id="chkFingerprint"> 指纹识别 (-z)</label>
+            <label class="checkbox-label"><input type="checkbox" id="chkRecursive"> 递归扫描 (-r)</label>
+            <label style="font-size:13px;">线程 (-t) <input type="number" id="dsThreads" value="25" min="1" max="200" style="width:60px;padding:2px 6px;"></label>
+          </div>
+        </div>
+        <div class="action-bar">
+          <button class="btn btn-primary btn-lg" id="btnDirStart" onclick="startDirBrute()">&#9654; 开始爆破</button>
+          <button class="btn btn-danger btn-lg" id="btnDirStop" onclick="stopDirBrute()" disabled>&#9632; 停止</button>
+        </div>
+        <div class="card"><h3>实时日志 <button class="btn btn-sm btn-outline" onclick="clearDirLogs()" style="float:right">清空</button></h3>
+          <div class="log-area" id="dirLogArea"><div class="log-entry system">等待开始扫描...</div></div>
+        </div>
+        <div class="card" id="dirResultCard" style="display:none;">
+          <h3>爆破结果 <span id="dirResultCount"></span></h3>
+          <div class="table-wrap" style="max-height:400px;">
+            <table class="result-table"><thead><tr><th>#</th><th>URL</th><th>状态码</th><th>标题</th></tr></thead><tbody id="dirResultBody"></tbody></table>
+          </div>
+        </div>
+      </div>
+      <div class="tab-panel" id="tab-jsanalysis"><h2>JS分析</h2><div class="placeholder-card"><div class="placeholder-icon">&#128220;</div><h3>功能开发中</h3></div></div>
+
+    </main>
+  </div>
+</div>
+
+<!-- Settings Modal -->
+<div class="modal-overlay" id="settingsModal" style="display:none;">
+  <div class="modal">
+    <div class="modal-header"><h3>设置</h3><button class="btn btn-sm" onclick="closeSettings()">&#10005;</button></div>
+    <div class="modal-body">
+      <div class="form-group"><label>SOCKS5 代理</label><input type="text" id="proxyUrl" placeholder="socks5://127.0.0.1:1080"></div>
+      <div class="form-group"><label>服务端口（重启生效）</label><input type="number" id="serverPort" placeholder="5500"></div>
+      <div class="form-group"><label>OneForAll 目录</label><input type="text" id="ofWorkDir"></div>
+      <div class="form-group"><label>Subfinder 目录</label><input type="text" id="sfWorkDir"></div>
+      <button class="btn btn-primary" onclick="saveSettings()">保存</button>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+<script src="/static/app.js"></script>
+</body>
+</html>

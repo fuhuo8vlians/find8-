@@ -1,0 +1,9 @@
+www.zjznb.cn IP:119.91.119.98 Ports:80 Title:None Banner:nginx Source:字典枚举
+mail.zjznb.cn IP:59.82.14.249, 59.82.44.105, 59.82.12.138, 59.82.9.175, 106.11.237.147, 106.11.237.24, 106.11.162.133, 59.82.9.177 Ports:443, 80 Title:邮箱用户登录-阿里邮箱提供技术支持 Banner:Apache-Struts2,Tengine,alibaba-企业邮箱,YunKeMail Source:字典枚举
+docs.zjznb.cn IP:119.91.119.98 Ports:80 Title:Docmost Banner:nginx Source:字典枚举
+test.zjznb.cn IP:8.155.35.122 Ports: Title: Banner: Source:字典枚举
+smtp.zjznb.cn IP:59.82.14.215, 59.82.37.30, 59.82.9.178, 59.82.44.168 Ports: Title: Banner: Source:字典枚举
+bbs.zjznb.cn IP:8.155.35.122 Ports: Title: Banner: Source:字典枚举
+pop3.zjznb.cn IP:58.221.74.7, 58.221.74.8, 58.221.74.134, 58.221.74.133 Ports: Title: Banner: Source:字典枚举
+imap.zjznb.cn IP:59.82.9.180, 59.82.13.252, 59.82.44.41, 59.82.8.66 Ports: Title: Banner: Source:字典枚举
+cat.zjznb.cn IP:119.91.119.98 Ports: Title: Banner: Source:字典枚举

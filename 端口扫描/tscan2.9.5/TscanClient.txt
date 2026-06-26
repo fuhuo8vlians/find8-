@@ -1,0 +1,927 @@
+
+任务开始:Default
+Start IpScan:127.0.0.1
+开始扫描 1 个主机的 98 个端口，共 98 个任务
+
+127.0.0.1:5357 open
+127.0.0.1:445 open
+127.0.0.1:135 open
+TCP/RPC, , [Microsoft Windows RPC], 127.0.0.1:135, [.@],
+扫描 127.0.0.1:135 结束,耗时: 5.5091ms
+TCP/SMB, , , 127.0.0.1:445, [],
+扫描 127.0.0.1:445 结束,耗时: 3.0038977s
+TCP/HTTP, [503], [Microsoft-HTTPAPI/2.0][Microsoft HTTPAPI httpd 2.0], http://127.0.0.1:5357, [Service Unavailable],
+扫描 http://127.0.0.1:5357 结束,耗时: 6.0136553s
+Ip扫描结束:127.0.0.1
+Start UrlScan:http://127.0.0.1:5357
+TCP/HTTP, [503], [Microsoft-HTTPAPI/2.0], http://127.0.0.1:5357, [Service Unavailable],
+扫描 http://127.0.0.1:5357 结束,耗时: 7.0426ms
+Url扫描结束:http://127.0.0.1:5357
+
+任务开始:Default
+Start IpScan:59.55.142.204
+wzt.sbtjt.com
+119.3.116.164
+www.sbtj...
+开始扫描 8 个主机的 98 个端口，共 784 个任务
+
+59.55.149.100:443 open
+59.55.142.204:8080 open
+59.55.142.204:8443 open
+59.55.149.100:80 open
+59.55.142.204:443 open
+59.55.142.204:80 open
+119.3.116.164:443 open
+59.55.142.204:8081 open
+119.3.116.164:8080 open
+119.3.116.164:8443 open
+119.3.116.164:10000 open
+119.3.116.164:80 open
+123.60.194.62:443 open
+123.60.194.62:8000 open
+123.60.194.62:8080 open
+119.3.116.164:8888 open
+119.3.116.164:8000 open
+123.60.194.62:80 open
+119.3.116.164:81 open
+123.60.194.62:8888 open
+119.3.116.164:88 open
+123.60.194.62:10000 open
+119.3.116.164:5000 open
+123.60.194.62:8081 open
+123.60.194.62:8443 open
+123.60.194.62:81 open
+123.60.194.62:5000 open
+119.3.116.164:8081 open
+123.60.194.62:88 open
+123.60.194.62:8008 open
+119.3.116.164:8008 open
+123.60.194.62:83 open
+119.3.116.164:8009 open
+119.3.116.164:8002 open
+123.60.194.62:5443 open
+www.sbtjt.com:8080 open
+119.3.116.164:4430 open
+www.sbtjt.com:4430 open
+59.55.142.204:8090 open
+119.3.116.164:888 open
+119.3.116.164:5443 open
+119.3.116.164:8090 open
+123.60.194.62:8002 open
+123.60.194.62:4443 open
+123.60.194.62:82 open
+123.60.194.62:8009 open
+119.3.116.164:7070 open
+119.3.116.164:8082 open
+123.60.194.62:8082 open
+119.3.116.164:4443 open
+123.60.194.62:85 open
+119.3.116.164:83 open
+119.3.116.164:8010 open
+123.60.194.62:8003 open
+119.3.116.164:8001 open
+119.3.116.164:82 open
+119.3.116.164:8003 open
+123.60.194.62:7070 open
+123.60.194.62:3000 open
+119.3.116.164:8086 open
+123.60.194.62:8086 open
+123.60.194.62:8001 open
+123.60.194.62:888 open
+119.3.116.164:3000 open
+123.60.194.62:8090 open
+119.3.116.164:85 open
+123.60.194.62:8010 open
+123.60.194.62:4430 open
+uat-sbp.sbtjt.com:4430 open
+123.60.194.62:8088 open
+119.3.116.164:8088 open
+119.3.116.164:4433 open
+www.sbtjt.com:4433 open
+123.60.194.62:4433 open
+123.60.194.62:9443 open
+uat-sbp.sbtjt.com:8082 open
+uat-sbp.sbtjt.com:8089 open
+119.3.116.164:9443 open
+www.sbtjt.com:7070 open
+www.sbtjt.com:8082 open
+www.sbtjt.com:9443 open
+www.sbtjt.com:80 open
+www.sbtjt.com:8009 open
+www.sbtjt.com:83 open
+www.sbtjt.com:8003 open
+www.sbtjt.com:8010 open
+uat-sbp.sbtjt.com:4433 open
+www.sbtjt.com:82 open
+www.sbtjt.com:8081 open
+www.sbtjt.com:8002 open
+www.sbtjt.com:4443 open
+www.sbtjt.com:81 open
+www.sbtjt.com:888 open
+www.sbtjt.com:8000 open
+www.sbtjt.com:3000 open
+www.sbtjt.com:8086 open
+www.sbtjt.com:8088 open
+www.sbtjt.com:8008 open
+www.sbtjt.com:8001 open
+www.sbtjt.com:88 open
+www.sbtjt.com:85 open
+www.sbtjt.com:5000 open
+www.sbtjt.com:8888 open
+www.sbtjt.com:8443 open
+www.sbtjt.com:8090 open
+www.sbtjt.com:8089 open
+uat-sbp.sbtjt.com:9443 open
+www.sbtjt.com:5443 open
+www.sbtjt.com:10000 open
+www.sbtjt.com:443 open
+123.60.194.62:8089 open
+119.3.116.164:7001 open
+www.sbtjt.com:7001 open
+119.3.116.164:10443 open
+uat-sbp.sbtjt.com:7001 open
+123.60.194.62:7001 open
+119.3.116.164:9200 open
+www.sbtjt.com:9200 open
+123.60.194.62:9200 open
+www.sbtjt.com:10443 open
+119.3.116.164:9000 open
+www.sbtjt.com:9000 open
+123.60.194.62:9000 open
+uat-sbp.sbtjt.com:9000 open
+123.60.194.62:10443 open
+uat-sbp.sbtjt.com:10443 open
+uat-sbp.sbtjt.com:9200 open
+TCP/HTTP, [404], [CW], http://119.3.116.164:5000, [未找到],
+扫描 http://119.3.116.164:5000 结束,耗时: 3.7597489s
+TCP/HTTP, [404], [CW], http://123.60.194.62:10000, [未找到],
+扫描 http://123.60.194.62:10000 结束,耗时: 3.9208142s
+TCP/HTTP, [404], [CW], http://123.60.194.62:7070, [未找到],
+TCP/HTTP, [404], [CW], http://123.60.194.62:3000, [未找到],
+TCP/HTTP, [404], [CW], http://119.3.116.164:83, [未找到],
+TCP/HTTP, [404], [CW], http://119.3.116.164:82, [未找到],
+TCP/HTTP, [404], [CW], http://119.3.116.164:7070, [未找到],
+TCP/HTTP, [404], [CW], http://119.3.116.164:888, [未找到],
+扫描 http://123.60.194.62:7070 结束,耗时: 3.7591881s
+TCP/HTTP, [404], [CW], http://123.60.194.62:888, [未找到],
+TCP/HTTP, [404], [CW], http://123.60.194.62:82, [未找到],
+扫描 http://119.3.116.164:83 结束,耗时: 3.8038784s
+扫描 http://119.3.116.164:888 结束,耗时: 3.8177286s
+TCP/HTTP, [404], [CW], http://123.60.194.62:85, [未找到],
+扫描 http://119.3.116.164:82 结束,耗时: 3.8065291s
+扫描 http://123.60.194.62:3000 结束,耗时: 3.7989883s
+扫描 http://119.3.116.164:7070 结束,耗时: 3.8011501s
+扫描 http://123.60.194.62:888 结束,耗时: 3.8093326s
+扫描 http://123.60.194.62:82 结束,耗时: 3.8205896s
+扫描 http://123.60.194.62:85 结束,耗时: 3.8492397s
+TCP/HTTP, [404], [CW], http://www.sbtjt.com:7070, [未找到],
+扫描 http://www.sbtjt.com:7070 结束,耗时: 3.4397519s
+TCP/HTTP, [404], [CW], http://www.sbtjt.com:83, [未找到],
+扫描 http://www.sbtjt.com:83 结束,耗时: 3.4587078s
+TCP/HTTP, [404], [CW], http://www.sbtjt.com:81, [未找到],
+TCP/HTTP, [404], [CW], http://www.sbtjt.com:82, [未找到],
+TCP/HTTP, [404], [CW], http://www.sbtjt.com:888, [未找到],
+TCP/HTTP, [404], [CW], http://www.sbtjt.com:85, [未找到],
+扫描 http://www.sbtjt.com:81 结束,耗时: 3.506537s
+TCP/HTTP, [404], [CW], http://www.sbtjt.com:3000, [未找到],
+扫描 http://www.sbtjt.com:82 结束,耗时: 3.5177691s
+TCP/HTTP, [404], [CW], http://www.sbtjt.com:88, [未找到],
+扫描 http://www.sbtjt.com:85 结束,耗时: 3.4660393s
+扫描 http://www.sbtjt.com:888 结束,耗时: 3.5157583s
+扫描 http://www.sbtjt.com:3000 结束,耗时: 3.5207109s
+扫描 http://www.sbtjt.com:88 结束,耗时: 3.4836616s
+TCP/HTTP, [404], [CW], http://123.60.194.62:9200, [未找到],
+扫描 http://123.60.194.62:9200 结束,耗时: 3.441204s
+TCP/HTTP, [404], [CW], http://119.3.116.164:9000, [未找到],
+扫描 http://119.3.116.164:9000 结束,耗时: 3.4058523s
+TCP/HTTP, [404], [CW], http://123.60.194.62:9000, [未找到],
+扫描 http://123.60.194.62:9000 结束,耗时: 3.4232075s
+TCP/HTTP, [404], [CW], http://uat-sbp.sbtjt.com:9000, [未找到],
+扫描 http://uat-sbp.sbtjt.com:9000 结束,耗时: 3.4466076s
+TCP/HTTP, [404], [CW], http://www.sbtjt.com:9000, [未找到],
+扫描 http://www.sbtjt.com:9000 结束,耗时: 3.5064516s
+TCP/HTTP, [404], [CW], http://uat-sbp.sbtjt.com:9200, [未找到],
+扫描 http://uat-sbp.sbtjt.com:9200 结束,耗时: 3.4248126s
+Ip扫描结束:59.55.142.204
+wzt.sbtjt.com
+119.3.116.164
+www.sbtj...
+Start UrlScan:http://119.3.116.164:5000
+http://123.60.194.62:100...
+TCP/HTTP, [404], [CW], http://119.3.116.164:9000, [未找到],
+TCP/HTTP, [404], [CW], http://www.sbtjt.com:85, [未找到],
+扫描 http://119.3.116.164:9000 结束,耗时: 453.7942ms
+TCP/HTTP, [404], [CW], http://123.60.194.62:888, [未找到],
+TCP/HTTP, [404], [CW], http://www.sbtjt.com:888, [未找到],
+TCP/HTTP, [404], [CW], http://www.sbtjt.com:3000, [未找到],
+TCP/HTTP, [404], [CW], http://www.sbtjt.com:9000, [未找到],
+TCP/HTTP, [404], [CW], http://www.sbtjt.com:81, [未找到],
+TCP/HTTP, [404], [CW], http://www.sbtjt.com:7070, [未找到],
+TCP/HTTP, [404], [CW], http://123.60.194.62:7070, [未找到],
+TCP/HTTP, [404], [CW], http://119.3.116.164:888, [未找到],
+扫描 http://www.sbtjt.com:888 结束,耗时: 492.0163ms
+TCP/HTTP, [404], [CW], http://uat-sbp.sbtjt.com:9000, [未找到],
+扫描 http://www.sbtjt.com:85 结束,耗时: 471.9938ms
+扫描 http://123.60.194.62:888 结束,耗时: 488.0043ms
+扫描 http://www.sbtjt.com:9000 结束,耗时: 498.0662ms
+TCP/HTTP, [404], [CW], http://123.60.194.62:10000, [未找到],
+扫描 http://uat-sbp.sbtjt.com:9000 结束,耗时: 569.1102ms
+TCP/HTTP, [404], [CW], http://123.60.194.62:82, [未找到],
+扫描 http://www.sbtjt.com:81 结束,耗时: 482.8666ms
+扫描 http://www.sbtjt.com:3000 结束,耗时: 494.9071ms
+扫描 http://119.3.116.164:888 结束,耗时: 548.5413ms
+扫描 http://123.60.194.62:82 结束,耗时: 603.6225ms
+扫描 http://www.sbtjt.com:7070 结束,耗时: 526.4232ms
+扫描 http://123.60.194.62:10000 结束,耗时: 586.2258ms
+TCP/HTTP, [404], [CW], http://119.3.116.164:7070, [未找到],
+TCP/HTTP, [404], [CW], http://119.3.116.164:5000, [未找到],
+TCP/HTTP, [404], [CW], http://www.sbtjt.com:83, [未找到],
+TCP/HTTP, [404], [CW], http://www.sbtjt.com:88, [未找到],
+TCP/HTTP, [404], [CW], http://www.sbtjt.com:82, [未找到],
+TCP/HTTP, [404], [CW], http://123.60.194.62:9000, [未找到],
+扫描 http://123.60.194.62:7070 结束,耗时: 540.9114ms
+TCP/HTTP, [404], [CW], http://123.60.194.62:9200, [未找到],
+TCP/HTTP, [404], [CW], http://123.60.194.62:85, [未找到],
+扫描 http://119.3.116.164:7070 结束,耗时: 625.8299ms
+TCP/HTTP, [404], [CW], http://119.3.116.164:82, [未找到],
+TCP/HTTP, [404], [CW], http://123.60.194.62:3000, [未找到],
+TCP/HTTP, [404], [CW], http://uat-sbp.sbtjt.com:9200, [未找到],
+TCP/HTTP, [404], [CW], http://119.3.116.164:83, [未找到],
+扫描 http://www.sbtjt.com:83 结束,耗时: 659.7433ms
+扫描 http://123.60.194.62:85 结束,耗时: 694.1267ms
+扫描 http://119.3.116.164:5000 结束,耗时: 632.8642ms
+扫描 http://123.60.194.62:3000 结束,耗时: 705.6279ms
+扫描 http://123.60.194.62:9200 结束,耗时: 694.7755ms
+扫描 http://www.sbtjt.com:88 结束,耗时: 666.8312ms
+扫描 http://119.3.116.164:83 结束,耗时: 718.9151ms
+扫描 http://uat-sbp.sbtjt.com:9200 结束,耗时: 706.6428ms
+扫描 http://www.sbtjt.com:82 结束,耗时: 669.1718ms
+扫描 http://123.60.194.62:9000 结束,耗时: 679.9973ms
+扫描 http://119.3.116.164:82 结束,耗时: 705.0311ms
+Url扫描结束:http://119.3.116.164:5000
+http://123.60.194.62:100...
+
+任务开始:Default
+Start IpScan:119.91.119.98
+www.zjznb.cn
+8.155.35.122
+cmd.zjznb....
+开始扫描 4 个主机的 922 个端口，共 3688 个任务
+
+119.91.119.98:22 open
+119.91.119.98:888 open
+119.91.119.98:443 open
+119.91.119.98:80 open
+TCP/SSH, , [OpenSSH 9.3], 119.91.119.98:22, [SSH-2.0-OpenSSH_9.3],
+扫描 119.91.119.98:22 结束,耗时: 82.4948ms
+TLS/HTTPS, , [Nginx], https://119.91.119.98:443, [None],
+扫描 https://119.91.119.98:443 结束,耗时: 376.383ms
+119.91.119.98:8888 open
+119.91.119.98:20004 open
+119.91.119.98:20005 open
+119.91.119.98:20010 open
+119.91.119.98:20001 open
+119.91.119.98:20000 open
+119.91.119.98:20003 open
+119.91.119.98:20007 open
+119.91.119.98:20006 open
+119.91.119.98:20002 open
+TCP/UNKNOWN, , , 119.91.119.98:20004, [],
+扫描 119.91.119.98:20004 结束,耗时: 806.0844ms
+TCP/BTX, , , 119.91.119.98:20005, [],
+扫描 119.91.119.98:20005 结束,耗时: 820.4422ms
+www.zjznb.cn:8888 open
+www.zjznb.cn:20006 open
+www.zjznb.cn:20002 open
+www.zjznb.cn:20004 open
+www.zjznb.cn:20005 open
+www.zjznb.cn:20007 open
+www.zjznb.cn:20003 open
+www.zjznb.cn:20000 open
+www.zjznb.cn:20010 open
+www.zjznb.cn:20001 open
+TCP/BTX, , , www.zjznb.cn:20005, [],
+TCP/HTTP, , , commtact-http://www.zjznb.cn:20002, [],
+扫描 www.zjznb.cn:20005 结束,耗时: 797.7093ms
+扫描 commtact-http://www.zjznb.cn:20002 结束,耗时: 807.0841ms
+TCP/UNKNOWN, , , www.zjznb.cn:20010, [],
+TCP/MICROSAN, , , www.zjznb.cn:20001, [],
+扫描 www.zjznb.cn:20010 结束,耗时: 822.4361ms
+扫描 www.zjznb.cn:20001 结束,耗时: 822.8848ms
+TLS/HTTPS, [200], [nginx][宝塔-BT.cn], https://119.91.119.98:8888, [安全入口校验失败],
+扫描 https://119.91.119.98:8888 结束,耗时: 7.3618222s
+Ip扫描结束:119.91.119.98
+www.zjznb.cn
+8.155.35.122
+cmd.zjznb....
+Start UrlScan:https://119.91.119.98:443
+https://119.91.119.98:88...
+TLS/HTTPS, [200], [宝塔-BT.cn][nginx], https://119.91.119.98:8888, [安全入口校验失败],
+扫描 https://119.91.119.98:8888 结束,耗时: 913.3958ms
+Url扫描结束:https://119.91.119.98:443
+https://119.91.119.98:88...
+
+任务开始:Default
+Start IpScan:119.91.119.98
+www.zjznb.cn
+59.82.14.249
+mail.zjznb...
+开始扫描 4 个主机的 98 个端口，共 392 个任务
+
+119.91.119.98:80 open
+119.91.119.98:22 open
+119.91.119.98:8888 open
+59.82.14.249:80 open
+119.91.119.98:888 open
+59.82.14.249:443 open
+119.91.119.98:443 open
+TCP/SSH, , [OpenSSH 9.3], 119.91.119.98:22, [SSH-2.0-OpenSSH_9.3],
+扫描 119.91.119.98:22 结束,耗时: 70.0499ms
+www.zjznb.cn:80 open
+www.zjznb.cn:888 open
+www.zjznb.cn:443 open
+www.zjznb.cn:22 open
+www.zjznb.cn:8888 open
+mail.zjznb.cn:443 open
+TLS/HTTPS, , [Nginx], https://119.91.119.98:443, [None],
+扫描 https://119.91.119.98:443 结束,耗时: 1.4226671s
+mail.zjznb.cn:80 open
+TLS/HTTPS, , [Nginx], https://www.zjznb.cn:443, [None],
+扫描 https://www.zjznb.cn:443 结束,耗时: 1.4393047s
+TCP/HTTP, [403], [nginx], http://119.91.119.98:888, [403 Forbidden],
+扫描 http://119.91.119.98:888 结束,耗时: 3.2672398s
+TLS/HTTPS, [200], [宝塔-BT.cn][nginx], https://119.91.119.98:8888, [安全入口校验失败],
+扫描 https://119.91.119.98:8888 结束,耗时: 7.3594483s
+Ip扫描结束:119.91.119.98
+www.zjznb.cn
+59.82.14.249
+mail.zjznb...
+Start UrlScan:https://119.91.119.98:443
+https://www.zjznb.cn:443...
+TCP/HTTP, [403], [nginx], http://119.91.119.98:888, [403 Forbidden],
+扫描 http://119.91.119.98:888 结束,耗时: 123.0454ms
+TLS/HTTPS, [200], [nginx][宝塔-BT.cn], https://119.91.119.98:8888, [安全入口校验失败],
+扫描 https://119.91.119.98:8888 结束,耗时: 637.7484ms
+Url扫描结束:https://119.91.119.98:443
+https://www.zjznb.cn:443...
+
+任务开始:Default
+Start IpScan:119.91.119.98
+开始扫描 1 个主机的 98 个端口，共 98 个任务
+
+119.91.119.98:22 open
+119.91.119.98:80 open
+119.91.119.98:443 open
+119.91.119.98:888 open
+119.91.119.98:8888 open
+TCP/SSH, , [OpenSSH 9.3], 119.91.119.98:22, [SSH-2.0-OpenSSH_9.3],
+扫描 119.91.119.98:22 结束,耗时: 70.0589ms
+TLS/HTTPS, , [Nginx], https://119.91.119.98:443, [None],
+扫描 https://119.91.119.98:443 结束,耗时: 373.9048ms
+TCP/HTTP, [403], [nginx], http://119.91.119.98:888, [403 Forbidden],
+扫描 http://119.91.119.98:888 结束,耗时: 3.2648s
+TLS/HTTPS, [200], [nginx][宝塔-BT.cn], https://119.91.119.98:8888, [安全入口校验失败],
+扫描 https://119.91.119.98:8888 结束,耗时: 7.3662941s
+Ip扫描结束:119.91.119.98
+Start UrlScan:https://119.91.119.98:443
+http://119.91.119.98:888...
+TCP/HTTP, [403], [nginx], http://119.91.119.98:888, [403 Forbidden],
+扫描 http://119.91.119.98:888 结束,耗时: 121.9216ms
+TLS/HTTPS, [200], [nginx][宝塔-BT.cn], https://119.91.119.98:8888, [安全入口校验失败],
+扫描 https://119.91.119.98:8888 结束,耗时: 540.2014ms
+Url扫描结束:https://119.91.119.98:443
+http://119.91.119.98:888...
+
+任务开始:Default
+Start IpScan:127.0.0.1
+开始扫描 1 个主机的 98 个端口，共 98 个任务
+
+127.0.0.1:135 open
+127.0.0.1:445 open
+127.0.0.1:5357 open
+TCP/RPC, , [Microsoft Windows RPC], 127.0.0.1:135, [.@],
+扫描 127.0.0.1:135 结束,耗时: 4.5389ms
+TCP/SMB, , , 127.0.0.1:445, [],
+扫描 127.0.0.1:445 结束,耗时: 3.0045021s
+TCP/HTTP, [503], [Microsoft-HTTPAPI/2.0][Microsoft HTTPAPI httpd 2.0], http://127.0.0.1:5357, [Service Unavailable],
+扫描 http://127.0.0.1:5357 结束,耗时: 6.012666s
+Ip扫描结束:127.0.0.1
+Start UrlScan:http://127.0.0.1:5357
+TCP/HTTP, [503], [Microsoft-HTTPAPI/2.0], http://127.0.0.1:5357, [Service Unavailable],
+扫描 http://127.0.0.1:5357 结束,耗时: 14.7623ms
+Url扫描结束:http://127.0.0.1:5357
+
+任务开始:Default
+Start IpScan:119.91.119.98
+www.zjznb.cn
+8.155.35.122
+test.zjznb...
+开始扫描 4 个主机的 98 个端口，共 392 个任务
+
+119.91.119.98:8888 open
+119.91.119.98:22 open
+119.91.119.98:443 open
+119.91.119.98:80 open
+119.91.119.98:888 open
+www.zjznb.cn:80 open
+www.zjznb.cn:888 open
+www.zjznb.cn:22 open
+www.zjznb.cn:443 open
+www.zjznb.cn:8888 open
+TCP/SSH, , [OpenSSH 9.3], www.zjznb.cn:22, [SSH-2.0-OpenSSH_9.3],
+扫描 www.zjznb.cn:22 结束,耗时: 68.1334ms
+TLS/HTTPS, , [Nginx], https://119.91.119.98:443, [None],
+扫描 https://119.91.119.98:443 结束,耗时: 1.3971271s
+TLS/HTTPS, , [Nginx], https://www.zjznb.cn:443, [None],
+扫描 https://www.zjznb.cn:443 结束,耗时: 374.7172ms
+TCP/HTTP, [403], [nginx], http://www.zjznb.cn:888, [403 Forbidden],
+扫描 http://www.zjznb.cn:888 结束,耗时: 3.2681588s
+TLS/HTTPS, [200], [nginx][宝塔-BT.cn], https://119.91.119.98:8888, [安全入口校验失败],
+扫描 https://119.91.119.98:8888 结束,耗时: 7.5362117s
+TLS/HTTPS, [200], [宝塔-BT.cn][nginx], https://www.zjznb.cn:8888, [安全入口校验失败],
+扫描 https://www.zjznb.cn:8888 结束,耗时: 7.520784s
+Ip扫描结束:119.91.119.98
+www.zjznb.cn
+8.155.35.122
+test.zjznb...
+Start UrlScan:https://119.91.119.98:443
+https://www.zjznb.cn:443...
+TCP/HTTP, [403], [nginx], http://www.zjznb.cn:888, [403 Forbidden],
+扫描 http://www.zjznb.cn:888 结束,耗时: 160.2052ms
+TLS/HTTPS, [200], [nginx][宝塔-BT.cn], https://www.zjznb.cn:8888, [安全入口校验失败],
+扫描 https://www.zjznb.cn:8888 结束,耗时: 721.1891ms
+TLS/HTTPS, [200], [nginx][宝塔-BT.cn], https://119.91.119.98:8888, [安全入口校验失败],
+扫描 https://119.91.119.98:8888 结束,耗时: 784.2524ms
+Url扫描结束:https://119.91.119.98:443
+https://www.zjznb.cn:443...
+
+任务开始:Default
+Start IpScan:119.91.119.98
+www.zjznb.cn
+开始扫描 2 个主机的 98 个端口，共 196 个任务
+
+119.91.119.98:80 open
+119.91.119.98:443 open
+119.91.119.98:888 open
+119.91.119.98:22 open
+119.91.119.98:8888 open
+www.zjznb.cn:8888 open
+www.zjznb.cn:80 open
+www.zjznb.cn:443 open
+www.zjznb.cn:22 open
+TCP/SSH, , [OpenSSH 9.3], 119.91.119.98:22, [SSH-2.0-OpenSSH_9.3],
+www.zjznb.cn:888 open
+扫描 119.91.119.98:22 结束,耗时: 112.3629ms
+TCP/SSH, , [OpenSSH 9.3], www.zjznb.cn:22, [SSH-2.0-OpenSSH_9.3],
+扫描 www.zjznb.cn:22 结束,耗时: 108.4178ms
+TLS/HTTPS, , [Nginx], https://119.91.119.98:443, [None],
+扫描 https://119.91.119.98:443 结束,耗时: 432.5744ms
+TLS/HTTPS, , [Nginx], https://www.zjznb.cn:443, [None],
+扫描 https://www.zjznb.cn:443 结束,耗时: 380.8065ms
+TCP/HTTP, [403], [nginx], http://119.91.119.98:888, [403 Forbidden],
+扫描 http://119.91.119.98:888 结束,耗时: 3.263565s
+TCP/HTTP, [403], [nginx], http://www.zjznb.cn:888, [403 Forbidden],
+扫描 http://www.zjznb.cn:888 结束,耗时: 3.2625915s
+TLS/HTTPS, [200], [nginx][宝塔-BT.cn], https://119.91.119.98:8888, [安全入口校验失败],
+扫描 https://119.91.119.98:8888 结束,耗时: 7.5315826s
+TLS/HTTPS, [200], [nginx][宝塔-BT.cn], https://www.zjznb.cn:8888, [安全入口校验失败],
+扫描 https://www.zjznb.cn:8888 结束,耗时: 7.5449042s
+Ip扫描结束:119.91.119.98
+www.zjznb.cn
+Start UrlScan:https://119.91.119.98:443
+https://www.zjznb.cn:443...
+TCP/HTTP, [403], [nginx], http://119.91.119.98:888, [403 Forbidden],
+TCP/HTTP, [403], [nginx], http://www.zjznb.cn:888, [403 Forbidden],
+扫描 http://119.91.119.98:888 结束,耗时: 122.2172ms
+扫描 http://www.zjznb.cn:888 结束,耗时: 131.7793ms
+TLS/HTTPS, [200], [宝塔-BT.cn][nginx], https://119.91.119.98:8888, [安全入口校验失败],
+扫描 https://119.91.119.98:8888 结束,耗时: 600.1463ms
+TLS/HTTPS, [200], [nginx][宝塔-BT.cn], https://www.zjznb.cn:8888, [安全入口校验失败],
+扫描 https://www.zjznb.cn:8888 结束,耗时: 665.1777ms
+Url扫描结束:https://119.91.119.98:443
+https://www.zjznb.cn:443...
+
+任务开始:Default
+Start IpScan:119.91.119.98
+开始扫描 1 个主机的 98 个端口，共 98 个任务
+
+119.91.119.98:80 open
+119.91.119.98:8888 open
+119.91.119.98:22 open
+119.91.119.98:443 open
+119.91.119.98:888 open
+TCP/SSH, , [OpenSSH 9.3], 119.91.119.98:22, [SSH-2.0-OpenSSH_9.3],
+扫描 119.91.119.98:22 结束,耗时: 67.9048ms
+TLS/HTTPS, , [Nginx], https://119.91.119.98:443, [None],
+扫描 https://119.91.119.98:443 结束,耗时: 370.5639ms
+TCP/HTTP, [403], [nginx], http://119.91.119.98:888, [403 Forbidden],
+扫描 http://119.91.119.98:888 结束,耗时: 3.2721594s
+TLS/HTTPS, [200], [nginx][宝塔-BT.cn], https://119.91.119.98:8888, [安全入口校验失败],
+扫描 https://119.91.119.98:8888 结束,耗时: 7.4199297s
+Ip扫描结束:119.91.119.98
+Start UrlScan:https://119.91.119.98:443
+http://119.91.119.98:888...
+TCP/HTTP, [403], [nginx], http://119.91.119.98:888, [403 Forbidden],
+扫描 http://119.91.119.98:888 结束,耗时: 122.7184ms
+TLS/HTTPS, [200], [nginx][宝塔-BT.cn], https://119.91.119.98:8888, [安全入口校验失败],
+扫描 https://119.91.119.98:8888 结束,耗时: 581.9866ms
+Url扫描结束:https://119.91.119.98:443
+http://119.91.119.98:888...
+
+任务开始:Default
+Start IpScan:119.91.119.98
+www.zjznb.cn
+开始扫描 2 个主机的 98 个端口，共 196 个任务
+
+119.91.119.98:443 open
+119.91.119.98:22 open
+119.91.119.98:80 open
+119.91.119.98:8888 open
+119.91.119.98:888 open
+TCP/SSH, , [OpenSSH 9.3], 119.91.119.98:22, [SSH-2.0-OpenSSH_9.3],
+www.zjznb.cn:22 open
+扫描 119.91.119.98:22 结束,耗时: 70.1566ms
+www.zjznb.cn:8888 open
+www.zjznb.cn:80 open
+www.zjznb.cn:443 open
+www.zjznb.cn:888 open
+TCP/SSH, , [OpenSSH 9.3], www.zjznb.cn:22, [SSH-2.0-OpenSSH_9.3],
+扫描 www.zjznb.cn:22 结束,耗时: 70.7341ms
+TLS/HTTPS, , [Nginx], https://119.91.119.98:443, [None],
+扫描 https://119.91.119.98:443 结束,耗时: 378.43ms
+TLS/HTTPS, , [Nginx], https://www.zjznb.cn:443, [None],
+扫描 https://www.zjznb.cn:443 结束,耗时: 382.5172ms
+TCP/HTTP, [403], [nginx], http://119.91.119.98:888, [403 Forbidden],
+扫描 http://119.91.119.98:888 结束,耗时: 3.2763315s
+TCP/HTTP, [403], [nginx], http://www.zjznb.cn:888, [403 Forbidden],
+扫描 http://www.zjznb.cn:888 结束,耗时: 3.2531015s
+TLS/HTTPS, [200], [nginx][宝塔-BT.cn], https://119.91.119.98:8888, [安全入口校验失败],
+扫描 https://119.91.119.98:8888 结束,耗时: 7.4784517s
+TLS/HTTPS, [200], [nginx][宝塔-BT.cn], https://www.zjznb.cn:8888, [安全入口校验失败],
+扫描 https://www.zjznb.cn:8888 结束,耗时: 7.6162539s
+Ip扫描结束:119.91.119.98
+www.zjznb.cn
+Start UrlScan:https://119.91.119.98:443
+https://www.zjznb.cn:443...
+TCP/HTTP, [403], [nginx], http://119.91.119.98:888, [403 Forbidden],
+TCP/HTTP, [403], [nginx], http://www.zjznb.cn:888, [403 Forbidden],
+扫描 http://119.91.119.98:888 结束,耗时: 134.0402ms
+扫描 http://www.zjznb.cn:888 结束,耗时: 136.275ms
+TLS/HTTPS, [200], [nginx][宝塔-BT.cn], https://www.zjznb.cn:8888, [安全入口校验失败],
+TLS/HTTPS, [200], [nginx][宝塔-BT.cn], https://119.91.119.98:8888, [安全入口校验失败],
+扫描 https://www.zjznb.cn:8888 结束,耗时: 735.699ms
+扫描 https://119.91.119.98:8888 结束,耗时: 737.0137ms
+Url扫描结束:https://119.91.119.98:443
+https://www.zjznb.cn:443...
+
+任务开始:Default
+Start IpScan:119.91.119.98
+www.zjznb.cn
+开始扫描 2 个主机的 98 个端口，共 196 个任务
+
+119.91.119.98:22 open
+119.91.119.98:80 open
+119.91.119.98:443 open
+119.91.119.98:888 open
+119.91.119.98:8888 open
+www.zjznb.cn:22 open
+www.zjznb.cn:888 open
+www.zjznb.cn:8888 open
+www.zjznb.cn:80 open
+www.zjznb.cn:443 open
+TCP/SSH, , [OpenSSH 9.3], 119.91.119.98:22, [SSH-2.0-OpenSSH_9.3],
+扫描 119.91.119.98:22 结束,耗时: 91.9905ms
+TCP/SSH, , [OpenSSH 9.3], www.zjznb.cn:22, [SSH-2.0-OpenSSH_9.3],
+扫描 www.zjznb.cn:22 结束,耗时: 100.2169ms
+TLS/HTTPS, , [Nginx], https://119.91.119.98:443, [None],
+扫描 https://119.91.119.98:443 结束,耗时: 405.3308ms
+TLS/HTTPS, , [Nginx], https://www.zjznb.cn:443, [None],
+扫描 https://www.zjznb.cn:443 结束,耗时: 380.0814ms
+TCP/HTTP, [403], [nginx], http://119.91.119.98:888, [403 Forbidden],
+扫描 http://119.91.119.98:888 结束,耗时: 3.2654188s
+TCP/HTTP, [403], [nginx], http://www.zjznb.cn:888, [403 Forbidden],
+扫描 http://www.zjznb.cn:888 结束,耗时: 3.2897371s
+TLS/HTTPS, [200], [nginx][宝塔-BT.cn], https://119.91.119.98:8888, [安全入口校验失败],
+扫描 https://119.91.119.98:8888 结束,耗时: 7.4814566s
+TLS/HTTPS, [200], [nginx][宝塔-BT.cn], https://www.zjznb.cn:8888, [安全入口校验失败],
+扫描 https://www.zjznb.cn:8888 结束,耗时: 7.4785879s
+Ip扫描结束:119.91.119.98
+www.zjznb.cn
+Start UrlScan:https://119.91.119.98:443
+https://www.zjznb.cn:443...
+TCP/HTTP, [403], [nginx], http://www.zjznb.cn:888, [403 Forbidden],
+TCP/HTTP, [403], [nginx], http://119.91.119.98:888, [403 Forbidden],
+扫描 http://www.zjznb.cn:888 结束,耗时: 121.7837ms
+扫描 http://119.91.119.98:888 结束,耗时: 121.7837ms
+TLS/HTTPS, [200], [宝塔-BT.cn][nginx], https://www.zjznb.cn:8888, [安全入口校验失败],
+TLS/HTTPS, [200], [宝塔-BT.cn][nginx], https://119.91.119.98:8888, [安全入口校验失败],
+扫描 https://www.zjznb.cn:8888 结束,耗时: 694.899ms
+扫描 https://119.91.119.98:8888 结束,耗时: 712.5103ms
+Url扫描结束:https://119.91.119.98:443
+https://www.zjznb.cn:443...
+
+任务开始:Default
+Start IpScan:119.91.119.98
+www.zjznb.cn
+开始扫描 2 个主机的 98 个端口，共 196 个任务
+
+119.91.119.98:22 open
+119.91.119.98:443 open
+119.91.119.98:8888 open
+119.91.119.98:888 open
+119.91.119.98:80 open
+www.zjznb.cn:22 open
+www.zjznb.cn:80 open
+www.zjznb.cn:443 open
+www.zjznb.cn:8888 open
+www.zjznb.cn:888 open
+TCP/SSH, , [OpenSSH 9.3], 119.91.119.98:22, [SSH-2.0-OpenSSH_9.3],
+TCP/SSH, , [OpenSSH 9.3], www.zjznb.cn:22, [SSH-2.0-OpenSSH_9.3],
+扫描 119.91.119.98:22 结束,耗时: 113.637ms
+扫描 www.zjznb.cn:22 结束,耗时: 100.9493ms
+TLS/HTTPS, , [Nginx], https://119.91.119.98:443, [None],
+扫描 https://119.91.119.98:443 结束,耗时: 390.0785ms
+TLS/HTTPS, , [Nginx], https://www.zjznb.cn:443, [None],
+扫描 https://www.zjznb.cn:443 结束,耗时: 384.5784ms
+TCP/HTTP, [403], [nginx], http://119.91.119.98:888, [403 Forbidden],
+扫描 http://119.91.119.98:888 结束,耗时: 3.2631912s
+TCP/HTTP, [403], [nginx], http://www.zjznb.cn:888, [403 Forbidden],
+扫描 http://www.zjznb.cn:888 结束,耗时: 3.2754429s
+TLS/HTTPS, [200], [nginx][宝塔-BT.cn], https://119.91.119.98:8888, [安全入口校验失败],
+扫描 https://119.91.119.98:8888 结束,耗时: 7.4431486s
+TLS/HTTPS, [200], [宝塔-BT.cn][nginx], https://www.zjznb.cn:8888, [安全入口校验失败],
+扫描 https://www.zjznb.cn:8888 结束,耗时: 7.4991824s
+Ip扫描结束:119.91.119.98
+www.zjznb.cn
+Start UrlScan:https://119.91.119.98:443
+https://www.zjznb.cn:443...
+TCP/HTTP, [403], [nginx], http://www.zjznb.cn:888, [403 Forbidden],
+TCP/HTTP, [403], [nginx], http://119.91.119.98:888, [403 Forbidden],
+扫描 http://www.zjznb.cn:888 结束,耗时: 126.9604ms
+扫描 http://119.91.119.98:888 结束,耗时: 134.7455ms
+TLS/HTTPS, [200], [宝塔-BT.cn][nginx], https://119.91.119.98:8888, [安全入口校验失败],
+TLS/HTTPS, [200], [nginx][宝塔-BT.cn], https://www.zjznb.cn:8888, [安全入口校验失败],
+扫描 https://119.91.119.98:8888 结束,耗时: 602.8627ms
+扫描 https://www.zjznb.cn:8888 结束,耗时: 603.2923ms
+Url扫描结束:https://119.91.119.98:443
+https://www.zjznb.cn:443...
+
+任务开始:Default
+Start IpScan:119.91.119.98
+开始扫描 1 个主机的 98 个端口，共 98 个任务
+
+119.91.119.98:80 open
+119.91.119.98:8888 open
+119.91.119.98:443 open
+119.91.119.98:22 open
+119.91.119.98:888 open
+TCP/SSH, , [OpenSSH 9.3], 119.91.119.98:22, [SSH-2.0-OpenSSH_9.3],
+扫描 119.91.119.98:22 结束,耗时: 66.7105ms
+TLS/HTTPS, , [Nginx], https://119.91.119.98:443, [None],
+扫描 https://119.91.119.98:443 结束,耗时: 375.8962ms
+TCP/HTTP, [403], [nginx], http://119.91.119.98:888, [403 Forbidden],
+扫描 http://119.91.119.98:888 结束,耗时: 3.3134601s
+TLS/HTTPS, [200], [nginx][宝塔-BT.cn], https://119.91.119.98:8888, [安全入口校验失败],
+扫描 https://119.91.119.98:8888 结束,耗时: 7.4521499s
+Ip扫描结束:119.91.119.98
+Start UrlScan:https://119.91.119.98:443
+http://119.91.119.98:888...
+TCP/HTTP, [403], [nginx], http://119.91.119.98:888, [403 Forbidden],
+扫描 http://119.91.119.98:888 结束,耗时: 123.01ms
+TLS/HTTPS, [200], [宝塔-BT.cn][nginx], https://119.91.119.98:8888, [安全入口校验失败],
+扫描 https://119.91.119.98:8888 结束,耗时: 565.1097ms
+Url扫描结束:https://119.91.119.98:443
+http://119.91.119.98:888...
+
+任务开始:Default
+Start IpScan:web.zjznb.cn
+开始扫描 1 个主机的 98 个端口，共 98 个任务
+
+Ip扫描结束:web.zjznb.cn
+
+任务开始:Default
+Start IpScan:arl.zjznb.cn
+开始扫描 1 个主机的 98 个端口，共 98 个任务
+
+arl.zjznb.cn:22 open
+arl.zjznb.cn:888 open
+arl.zjznb.cn:443 open
+arl.zjznb.cn:80 open
+arl.zjznb.cn:8888 open
+TCP/SSH, , [OpenSSH 9.3], arl.zjznb.cn:22, [SSH-2.0-OpenSSH_9.3],
+扫描 arl.zjznb.cn:22 结束,耗时: 101.0952ms
+TLS/HTTPS, , [Nginx], https://arl.zjznb.cn:443, [None],
+扫描 https://arl.zjznb.cn:443 结束,耗时: 384.4018ms
+TCP/HTTP, [403], [nginx], http://arl.zjznb.cn:888, [403 Forbidden],
+扫描 http://arl.zjznb.cn:888 结束,耗时: 3.2814569s
+TCP/HTTP, , [Nginx], http://arl.zjznb.cn:80, [None],
+扫描 http://arl.zjznb.cn:80 结束,耗时: 3.3819923s
+TLS/HTTPS, [200], [宝塔-BT.cn][nginx], https://arl.zjznb.cn:8888, [安全入口校验失败],
+扫描 https://arl.zjznb.cn:8888 结束,耗时: 7.4053191s
+Ip扫描结束:arl.zjznb.cn
+Start UrlScan:https://arl.zjznb.cn:443
+http://arl.zjznb.cn:888
+h...
+TCP/HTTP, [403], [nginx], http://arl.zjznb.cn:888, [403 Forbidden],
+扫描 http://arl.zjznb.cn:888 结束,耗时: 123.8234ms
+TLS/HTTPS, [200], [nginx][宝塔-BT.cn], https://arl.zjznb.cn:8888, [安全入口校验失败],
+扫描 https://arl.zjznb.cn:8888 结束,耗时: 721.9627ms
+Url扫描结束:https://arl.zjznb.cn:443
+http://arl.zjznb.cn:888
+h...
+
+任务开始:Default
+Start IpScan:119.91.119.98
+www.zjznb.cn
+开始扫描 2 个主机的 98 个端口，共 196 个任务
+
+119.91.119.98:443 open
+119.91.119.98:80 open
+119.91.119.98:888 open
+119.91.119.98:8888 open
+119.91.119.98:22 open
+www.zjznb.cn:888 open
+www.zjznb.cn:22 open
+www.zjznb.cn:443 open
+www.zjznb.cn:8888 open
+www.zjznb.cn:80 open
+TCP/SSH, , [OpenSSH 9.3], 119.91.119.98:22, [SSH-2.0-OpenSSH_9.3],
+扫描 119.91.119.98:22 结束,耗时: 68.4787ms
+TCP/SSH, , [OpenSSH 9.3], www.zjznb.cn:22, [SSH-2.0-OpenSSH_9.3],
+扫描 www.zjznb.cn:22 结束,耗时: 69.2172ms
+TLS/HTTPS, , [Nginx], https://119.91.119.98:443, [None],
+扫描 https://119.91.119.98:443 结束,耗时: 390.9172ms
+TLS/HTTPS, , [Nginx], https://www.zjznb.cn:443, [None],
+扫描 https://www.zjznb.cn:443 结束,耗时: 376.7839ms
+TCP/HTTP, [403], [nginx], http://119.91.119.98:888, [403 Forbidden],
+扫描 http://119.91.119.98:888 结束,耗时: 3.2602827s
+TCP/HTTP, [403], [nginx], http://www.zjznb.cn:888, [403 Forbidden],
+扫描 http://www.zjznb.cn:888 结束,耗时: 3.2728687s
+TLS/HTTPS, [200], [nginx][宝塔-BT.cn], https://119.91.119.98:8888, [安全入口校验失败],
+扫描 https://119.91.119.98:8888 结束,耗时: 7.4110469s
+TLS/HTTPS, [200], [nginx][宝塔-BT.cn], https://www.zjznb.cn:8888, [安全入口校验失败],
+扫描 https://www.zjznb.cn:8888 结束,耗时: 7.3889491s
+Ip扫描结束:119.91.119.98
+www.zjznb.cn
+Start UrlScan:https://119.91.119.98:443
+https://www.zjznb.cn:443...
+TCP/HTTP, [403], [nginx], http://119.91.119.98:888, [403 Forbidden],
+TCP/HTTP, [403], [nginx], http://www.zjznb.cn:888, [403 Forbidden],
+扫描 http://119.91.119.98:888 结束,耗时: 125.2607ms
+扫描 http://www.zjznb.cn:888 结束,耗时: 125.2607ms
+TLS/HTTPS, [200], [nginx][宝塔-BT.cn], https://www.zjznb.cn:8888, [安全入口校验失败],
+扫描 https://www.zjznb.cn:8888 结束,耗时: 556.2989ms
+TLS/HTTPS, [200], [nginx][宝塔-BT.cn], https://119.91.119.98:8888, [安全入口校验失败],
+扫描 https://119.91.119.98:8888 结束,耗时: 601.6508ms
+Url扫描结束:https://119.91.119.98:443
+https://www.zjznb.cn:443...
+
+任务开始:Default
+Start IpScan:119.91.119.98
+www.zjznb.cn
+开始扫描 2 个主机的 98 个端口，共 196 个任务
+
+119.91.119.98:888 open
+119.91.119.98:80 open
+119.91.119.98:443 open
+119.91.119.98:22 open
+119.91.119.98:8888 open
+www.zjznb.cn:8888 open
+www.zjznb.cn:443 open
+www.zjznb.cn:80 open
+www.zjznb.cn:22 open
+www.zjznb.cn:888 open
+TCP/SSH, , [OpenSSH 9.3], 119.91.119.98:22, [SSH-2.0-OpenSSH_9.3],
+扫描 119.91.119.98:22 结束,耗时: 202.3139ms
+TCP/SSH, , [OpenSSH 9.3], www.zjznb.cn:22, [SSH-2.0-OpenSSH_9.3],
+扫描 www.zjznb.cn:22 结束,耗时: 220.5463ms
+TLS/HTTPS, , [Nginx], https://119.91.119.98:443, [None],
+扫描 https://119.91.119.98:443 结束,耗时: 524.7453ms
+TLS/HTTPS, , [Nginx], https://www.zjznb.cn:443, [None],
+扫描 https://www.zjznb.cn:443 结束,耗时: 531.9773ms
+TCP/HTTP, [403], [nginx], http://119.91.119.98:888, [403 Forbidden],
+扫描 http://119.91.119.98:888 结束,耗时: 3.2630229s
+TCP/HTTP, [403], [nginx], http://www.zjznb.cn:888, [403 Forbidden],
+扫描 http://www.zjznb.cn:888 结束,耗时: 3.3926713s
+TLS/HTTPS, [200], [nginx][宝塔-BT.cn], https://119.91.119.98:8888, [安全入口校验失败],
+扫描 https://119.91.119.98:8888 结束,耗时: 7.4506267s
+TLS/HTTPS, [200], [nginx][宝塔-BT.cn], https://www.zjznb.cn:8888, [安全入口校验失败],
+扫描 https://www.zjznb.cn:8888 结束,耗时: 7.5510935s
+Ip扫描结束:119.91.119.98
+www.zjznb.cn
+Start UrlScan:https://119.91.119.98:443
+https://www.zjznb.cn:443...
+TCP/HTTP, [403], [nginx], http://119.91.119.98:888, [403 Forbidden],
+TCP/HTTP, [403], [nginx], http://www.zjznb.cn:888, [403 Forbidden],
+扫描 http://119.91.119.98:888 结束,耗时: 123.6667ms
+扫描 http://www.zjznb.cn:888 结束,耗时: 127.5242ms
+TLS/HTTPS, [200], [宝塔-BT.cn][nginx], https://www.zjznb.cn:8888, [安全入口校验失败],
+扫描 https://www.zjznb.cn:8888 结束,耗时: 553.5193ms
+TLS/HTTPS, [200], [宝塔-BT.cn][nginx], https://119.91.119.98:8888, [安全入口校验失败],
+扫描 https://119.91.119.98:8888 结束,耗时: 598.857ms
+Url扫描结束:https://119.91.119.98:443
+https://www.zjznb.cn:443...
+
+任务开始:Default
+Start SubDomainScan:zjznb.cn
+TLS/HTTPS, , , https://www.zjznb.cn:443, [None],
+TCP/HTTP, , , http://smtp.zjznb.cn:80, [None],
+扫描 http://www.zjznb.cn:80 结束,耗时: 136.4ms
+TCP/HTTP, [444], [nginx], http://www.zjznb.cn:80, [None],
+www.zjznb.cn IP:119.91.119.98 Ports:80 Title:None Banner:nginx Source:字典枚举
+扫描 https://mail.zjznb.cn:443 结束,耗时: 1.1459124s
+TLS/HTTPS, [200], [Tengine][Apache-Struts2][alibaba-企业邮箱][YunKeMail], https://mail.zjznb.cn:443, [邮箱用户登录-阿里邮箱提供技术支持],
+扫描 http://mail.zjznb.cn:80 结束,耗时: 1.1464227s
+TCP/HTTP, [200], [Apache-Struts2][Tengine][alibaba-企业邮箱][YunKeMail], http://mail.zjznb.cn:80, [邮箱用户登录-阿里邮箱提供技术支持],
+mail.zjznb.cn IP:59.82.14.249, 59.82.44.105, 59.82.12.138, 59.82.9.175, 106.11.237.147, 106.11.237.24, 106.11.162.133, 59.82.9.177 Ports:443, 80 Title:邮箱用户登录-阿里邮箱提供技术支持 Banner:Apache-Struts2,Tengine,alibaba-企业邮箱,YunKeMail Source:字典枚举
+TLS/HTTPS, , , https://docs.zjznb.cn:443, [None],
+扫描 http://docs.zjznb.cn:80 结束,耗时: 1.2099254s
+TCP/HTTP, [200], [nginx], http://docs.zjznb.cn:80, [Docmost],
+docs.zjznb.cn IP:119.91.119.98 Ports:80 Title:Docmost Banner:nginx Source:字典枚举
+TLS/HTTPS, , , https://test.zjznb.cn:443, [None],
+TCP/HTTP, , , http://test.zjznb.cn:80, [None],
+test.zjznb.cn IP:8.155.35.122 Ports: Title: Banner: Source:字典枚举
+TLS/HTTPS, , , https://smtp.zjznb.cn:443, [None],
+smtp.zjznb.cn IP:59.82.14.215, 59.82.37.30, 59.82.9.178, 59.82.44.168 Ports: Title: Banner: Source:字典枚举
+TLS/HTTPS, , , https://bbs.zjznb.cn:443, [None],
+TCP/HTTP, , , http://bbs.zjznb.cn:80, [None],
+bbs.zjznb.cn IP:8.155.35.122 Ports: Title: Banner: Source:字典枚举
+TCP/HTTP, , , http://pop3.zjznb.cn:80, [None],
+TLS/HTTPS, , , https://pop3.zjznb.cn:443, [None],
+pop3.zjznb.cn IP:58.221.74.7, 58.221.74.8, 58.221.74.134, 58.221.74.133 Ports: Title: Banner: Source:字典枚举
+TLS/HTTPS, , , https://imap.zjznb.cn:443, [None],
+TCP/HTTP, , , http://imap.zjznb.cn:80, [None],
+imap.zjznb.cn IP:59.82.9.180, 59.82.13.252, 59.82.44.41, 59.82.8.66 Ports: Title: Banner: Source:字典枚举
+TCP/HTTP, , , http://cat.zjznb.cn:80, [None],
+TLS/HTTPS, , , https://cat.zjznb.cn:443, [None],
+cat.zjznb.cn IP:119.91.119.98 Ports: Title: Banner: Source:字典枚举
+Finish SubDomainScan:zjznb.cn
+
+任务开始:Default
+Start IpScan:119.91.119.98
+www.zjznb.cn
+开始扫描 2 个主机的 65528 个端口，共 131056 个任务
+
+119.91.119.98:22 open
+119.91.119.98:80 open
+TCP/SSH, , [OpenSSH 9.3], 119.91.119.98:22, [SSH-2.0-OpenSSH_9.3],
+扫描 119.91.119.98:22 结束,耗时: 83.8602ms
+www.zjznb.cn:22 open
+TCP/SSH, , [OpenSSH 9.3], www.zjznb.cn:22, [SSH-2.0-OpenSSH_9.3],
+扫描 www.zjznb.cn:22 结束,耗时: 65.5963ms
+www.zjznb.cn:443 open
+119.91.119.98:443 open
+TLS/HTTPS, , [Nginx], https://119.91.119.98:443, [None],
+TLS/HTTPS, , [Nginx], https://www.zjznb.cn:443, [None],
+扫描 https://119.91.119.98:443 结束,耗时: 1.3975753s
+扫描 https://www.zjznb.cn:443 结束,耗时: 1.417373s
+119.91.119.98:888 open
+www.zjznb.cn:888 open
+TCP/HTTP, [403], [nginx], http://www.zjznb.cn:888, [403 Forbidden],
+扫描 http://www.zjznb.cn:888 结束,耗时: 3.2670516s
+119.91.119.98:8024 open
+119.91.119.98:8025 open
+www.zjznb.cn:8025 open
+www.zjznb.cn:8024 open
+TCP/UNKNOWN, , , 119.91.119.98:8024, [],
+扫描 119.91.119.98:8024 结束,耗时: 3.4330812s
+TCP/UNKNOWN, , , www.zjznb.cn:8024, [],
+扫描 www.zjznb.cn:8024 结束,耗时: 4.4414537s
+119.91.119.98:20003 open
+119.91.119.98:20009 open
+119.91.119.98:20004 open
+119.91.119.98:20001 open
+119.91.119.98:20007 open
+119.91.119.98:20010 open
+119.91.119.98:20002 open
+119.91.119.98:20000 open
+119.91.119.98:20006 open
+119.91.119.98:20005 open
+119.91.119.98:20008 open
+TLS/HTTPS, , , commtact-https://119.91.119.98:20003, [],
+TCP/UNKNOWN, , , 119.91.119.98:20010, [],
+扫描 commtact-https://119.91.119.98:20003 结束,耗时: 802.9284ms
+扫描 119.91.119.98:20010 结束,耗时: 796.1222ms
+TCP/UNKNOWN, , , 119.91.119.98:20007, [],
+扫描 119.91.119.98:20007 结束,耗时: 822.9635ms
+www.zjznb.cn:20003 open
+www.zjznb.cn:20005 open
+www.zjznb.cn:20009 open
+www.zjznb.cn:20000 open
+www.zjznb.cn:20008 open
+www.zjznb.cn:20006 open
+www.zjznb.cn:20004 open
+www.zjznb.cn:20002 open
+www.zjznb.cn:20007 open
+www.zjznb.cn:20010 open
+www.zjznb.cn:20001 open
+119.91.119.98:25565 open
+www.zjznb.cn:25565 open
+Ip扫描结束:119.91.119.98
+www.zjznb.cn
+Start UrlScan:https://119.91.119.98:443
+https://www.zjznb.cn:443...
+TCP/HTTP, [403], [nginx], http://www.zjznb.cn:888, [403 Forbidden],
+扫描 http://www.zjznb.cn:888 结束,耗时: 167.0754ms
+Url扫描结束:https://119.91.119.98:443
+https://www.zjznb.cn:443...

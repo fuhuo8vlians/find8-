@@ -1,0 +1,2 @@
+{"name":"docs.zjznb.cn.","type":"A","class":"IN","status":"NOERROR","data":{"answers":[{"ttl":600,"type":"A","class":"IN","name":"docs.zjznb.cn.","data":"119.91.119.98"}]},"resolver":"64.6.64.6:53"}
+{"name":"ctf8.zjznb.cn.","type":"A","class":"IN","status":"NOERROR","data":{"answers":[{"ttl":600,"type":"A","class":"IN","name":"ctf8.zjznb.cn.","data":"119.91.119.98"}]},"resolver":"9.9.9.9:53"}

@@ -1,0 +1,197 @@
+CurrentVersion: 2.9.5
+NewVersion: 3.3.0
+AgreePolicy: false
+CheckUpdate: 2026.06.25
+CheckUpdateSN: "00142422020000000000260000000000000000000000"
+LicenseKey: ""
+InterFace: ""
+CfgUiMode: light
+CfgLanguage: zh
+CfgSlogan: true
+CfgTags: '[{"name":"已检测","color":"#18a058"},{"name":"待检测","color":"#f0a020"},{"name":"高危","color":"#d03050"},{"name":"中低危","color":"#2080f0"},{"name":"误报","color":"#02bdd4"},{"name":"清除","color":"#B1B2B2"}]'
+CfgPath: F:\信息安全\26工具\web攻防\信息收集\端口扫描\tscan2.9.5
+CfgOutPath: F:\信息安全\26工具\web攻防\信息收集\端口扫描\tscan2.9.5
+Cfgtimeout: "3000"
+CfgWebTimeout: "15000"
+CfgCookie: ""
+CfgBodyMaxSize: ""
+SelectedCfgUA: Cfgrandua
+Cfguatxt: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko)
+  Chrome/80.0.3987.87 Safari/537.36 SE 2.X MetaSr 1.0
+CfgGlobalProxy: false
+CfgProxy: ""
+CfgProxyAddrs: http://127.0.0.1:51024
+CfgOpenFile: false
+Enginekeys:
+  fofa: ""
+  hunter: ""
+  quake: ""
+  zoomeyeapi: ""
+  zerozone: ""
+  shodan: ""
+  threatbook: ""
+  virustotal: ""
+  github: ""
+  censys: ""
+  binaryedge: ""
+  chaos: ""
+  passivetotal: ""
+  bevigil: ""
+  certspotter: ""
+  securitytrails: ""
+  intelx: ""
+  EnginePages: "5"
+Engines:
+  fofa: false
+  hunter: false
+  quake: false
+  zoomeyeapi: false
+  zerozone: false
+  shodan: false
+  threatbook: false
+  virustotal: false
+  github: false
+  censys: false
+  binaryedge: false
+  chaos: false
+  passivetotal: false
+  bevigil: false
+  certspotter: false
+  securitytrails: false
+CyberHistory: ""
+PingScan: true
+AliveCheck: None
+IpThreadStr: "200"
+IpSelectedStrategy: top100
+IpStrategyPorts: 80,23,443,21,22,25,3389,110,445,139,143,53,135,3306,8080,1723,111,5900,8888,81,10000,514,5060,2000,8443,8000,32768,554,1433,49152,2001,8008,49154,5666,5000,5631,49153,8081,2049,88,79,5800,2121,1110,49155,6000,513,990,5357,543,544,5101,389,8009,444,9999,5009,7070,5190,3000,5432,3986,1900,6646,5051,49157,873,1755,2717,4899,9100,82,83,85,888,1521,3443,4430,4433,4443,5443,5985,6379,7001,8001,8002,8003,8010,8082,8086,8088,8089,8090,9000,9043,9200,9443,10443,11211,27017
+IpCustomPort: 21,22,23,53,80,81,82,83,85,88,135,139,443,445,888,1433,1521,3306,3389,3443,4430,4433,4443,4899,5432,5443,5900,5985,6379,7001,8000,8001,8002,8003,8008,8009,8010,8080,8081,8082,8086,8088,8089,8090,8443,8888,9000,9043,9100,9200,9443,9999,10443,11211,27017
+IpFinger: true
+IpPwdCheck: false
+IpPocCheck: false
+IpFingerOpt: ""
+IpTimeoutStr: "1000"
+IpFirewallCheck: false
+FilterPrint: true
+SmartMode: true
+SmartPortProbe: icmp,80
+SmartIpProbe: 1,254
+UrlThreadStr: "100"
+UrlPocCheck: false
+ActiveFinger: false
+UrlFingerOpt: tiny
+UrlFollowRedirect: true
+Screenshot: false
+SubThreadStr: "50"
+SubPortStr: 80,443
+SubFilterIp: ""
+SubApi: true
+SubWildCard: true
+SubPocCheck: false
+SubFinger: true
+SubSelectDns: 阿里DNS-223.5.5.5
+SubCustomDictStr: ""
+PocThreadStr: "100"
+PocTimeDelay: "0"
+PocRetryStr: "1"
+PocFinger: true
+PocFingerForPoc: true
+PocNoMacthWithNoPoc: false
+PocLevel: low
+UsePocxray: false
+UsePocnuclei: false
+UsePocafrog: false
+UsePoccustom: false
+ExePathxray: ""
+ExePathnuclei: ""
+ExePathafrog: ""
+ExePathcustom: ""
+PocPathxray: ""
+PocPathnuclei: ""
+PocPathafrog: ""
+PocPathcustom: ""
+SelectPocsxray: ""
+SelectPocsnuclei: ""
+SelectPocsafrog: ""
+SelectPocscustom: ""
+PocThreadxray: "3"
+PocThreadnuclei: "3"
+PocThreadafrog: "3"
+PocArgsxray: webscan --plugins brute-force,cmd-injection,dirscan,jsonp,path-traversal,sqldet,ssrf,xss,fastjson,shiro,struts,thinkphp,xstream,phantasm
+PocArgsnuclei: -j -mhe 15 -ni
+PocArgsafrog: -doh
+PwdThreadStr: "5"
+PwdTimeoutStr: "3000"
+PwdRetryStr: "1"
+PwdOracleListen: orcl
+PwdFinger: true
+PwdSuffix: ""
+PwdExecCmd: whoami
+PwdUseInsideDict: true
+PwdCrackOneAccount: true
+PwdServices: ""
+PwdDictAddMode: false
+PwdDictFile: ""
+DirSelectMode: 字典模式
+DirSelectMethod: GET
+DirRecursion: false
+DirExtFilter: js,gif,jpg,png,css
+DirCodeFilter: 400,404,5xx
+DirKeyFilter: ""
+DirLenFilter: ""
+DirFileExt: jsp,php,asp,aspx
+DirTimeDelayStr: "0"
+DirThreadStr: "50"
+DirCustomDictStr: ""
+DirWafCheck: false
+JsThreadStr: "50"
+JsStepStr: "3"
+JsMaxStr: "999"
+JsOnlyMyJs: false
+JsCodeFilter: 400,404,5xx
+JsKeyFilter: ""
+JsLenFilter: ""
+JsMode: 深入模式
+HostThreadStr: ""
+HostPort: ""
+HostCodeFilter: ""
+HostLenFilter: ""
+BypassThreadStr: ""
+BypassRedirect: false
+BypassCodeFilter: ""
+ProxyListenAddr: ""
+VerifyWeb: https://www.baidu.com
+VerifyStr: 百度一下
+VerifyDel: false
+ProxyMode: pooling
+ProxyModeCfg: "10"
+FofaEnabled: false
+FofaQueryString: protocol=="socks5" && country="CN" && banner="Method:No Authentication"
+FofaQueryCount: "500"
+QuaKeEnabled: false
+QuaKeQueryString: 'service:socks5  AND country: "CN" AND response:"No authentication"'
+QuaKeQueryCount: "300"
+HunterEnabled: false
+HunterQueryString: protocol=="socks5"&&protocol.banner="No authentication"&&ip.country="CN"
+HunterQueryCount: "200"
+FreeEnabled: false
+FreeQueryType: socks5
+ProxyKeyMode: blockkey
+ProxyKeyWord: ""
+ProxyKeyAddr: ""
+ProxyLoopPool: false
+InfoTycToken: ""
+InfoBeianxToken: ""
+InfoAizhanCookie: ""
+InfoRiskbirdCookie: ""
+InfoChinazCookie: ""
+InfoIpScan: false
+InfoWebFinger: false
+InfoSubDomain: false
+InfoRiskbirdSum: "100"
+InfoHistory: ""
+CsPayloadWin: http://8.8.8.8/wincs.exe
+CsPayloadLinux: http://8.8.8.8/linuxcs
+ReverseIp: 8.8.8.8
+ReversePort: "8888"
+DecodeTab: ""
+ProjectOptions: ""

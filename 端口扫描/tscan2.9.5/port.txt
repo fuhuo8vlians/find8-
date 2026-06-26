@@ -1,0 +1,45 @@
+119.91.119.98:22 open
+119.91.119.98:80 open
+TCP/SSH, , [OpenSSH 9.3], 119.91.119.98:22, [SSH-2.0-OpenSSH_9.3],
+www.zjznb.cn:22 open
+TCP/SSH, , [OpenSSH 9.3], www.zjznb.cn:22, [SSH-2.0-OpenSSH_9.3],
+www.zjznb.cn:443 open
+119.91.119.98:443 open
+TLS/HTTPS, , [Nginx], https://119.91.119.98:443, [None],
+TLS/HTTPS, , [Nginx], https://www.zjznb.cn:443, [None],
+119.91.119.98:888 open
+www.zjznb.cn:888 open
+TCP/HTTP, [403], [nginx], http://www.zjznb.cn:888, [403 Forbidden],
+119.91.119.98:8024 open
+119.91.119.98:8025 open
+www.zjznb.cn:8025 open
+www.zjznb.cn:8024 open
+TCP/UNKNOWN, , , 119.91.119.98:8024, [],
+TCP/UNKNOWN, , , www.zjznb.cn:8024, [],
+119.91.119.98:20003 open
+119.91.119.98:20009 open
+119.91.119.98:20004 open
+119.91.119.98:20001 open
+119.91.119.98:20007 open
+119.91.119.98:20010 open
+119.91.119.98:20002 open
+119.91.119.98:20000 open
+119.91.119.98:20006 open
+119.91.119.98:20005 open
+119.91.119.98:20008 open
+TLS/HTTPS, , , commtact-https://119.91.119.98:20003, [],
+TCP/UNKNOWN, , , 119.91.119.98:20010, [],
+TCP/UNKNOWN, , , 119.91.119.98:20007, [],
+www.zjznb.cn:20003 open
+www.zjznb.cn:20005 open
+www.zjznb.cn:20009 open
+www.zjznb.cn:20000 open
+www.zjznb.cn:20008 open
+www.zjznb.cn:20006 open
+www.zjznb.cn:20004 open
+www.zjznb.cn:20002 open
+www.zjznb.cn:20007 open
+www.zjznb.cn:20010 open
+www.zjznb.cn:20001 open
+119.91.119.98:25565 open
+www.zjznb.cn:25565 open

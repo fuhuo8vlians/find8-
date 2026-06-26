@@ -1,0 +1,1 @@
+subfinder -dL url.txt -o out.txt
