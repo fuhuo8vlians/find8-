@@ -1,3 +1,7 @@
+# Large files / unused tool directories
+js/
+子域名收集/OneForAll-0.4.5/data/ip2location.db
+
 # Data & Results
 0.综合主动信息收集工具/data/
 0.综合主动信息收集工具/results/
