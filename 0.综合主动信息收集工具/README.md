@@ -20,8 +20,8 @@
 
 ```bash
 # 1. 克隆仓库
-git clone https://github.com/fuhuo8vlians/find8-.git
-cd find8-/0.综合主动信息收集工具
+git clone https://github.com/fuhuo8vlians/find8vlians.git
+cd find8vlians/0.综合主动信息收集工具
 
 # 2. 安装依赖
 pip install -r requirements.txt
